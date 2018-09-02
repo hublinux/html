@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>鼠标滑过变大＋轮播</title>
+		<style type="text/css">
+			.g{
+				margin: auto;
+				width: 1111px;
+				height: 500px;
+				/*background: pink;*/
+			}
+			.btn_l{
+				width: 30px;
+				height: 500px;
+				float: left;
+				background: url(ads/lwhite.png) no-repeat;
+				background-position: center;
+			}
+			.btn_r{
+				width: 30px;
+				height: 500px;
+				float: left;
+				background: url(ads/rwhite.png) no-repeat;
+				background-position: center;
+			}
+			.a{
+				margin: auto;
+				width: 920px;
+				height: 500px;
+				overflow: hidden;
+				float: left;
+			}
+			#show{	
+				width: 1660px;
+				height: 500px;
+			}
+			.ad{
+				width: 920px;
+				height: 500px;
+				float: left;
+				/*margin-left: -100px;*/
+			}
+			#sl{
+				margin: auto;
+				margin-top: 5px;
+				width: 1010px;
+				height: 100px;
+			}
+			.picdiv{
+				width: 121px;
+				height: 100px;
+				float: left;
+				position: relative;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="g">
+			<div class="btn_l" onmouseup="mouseup(this, 0)" onmousedown ="doScroll(this, 0)"></div>
+			<div class="a">
+				<div id="show"></div>
+			</div>
+			<div class="btn_r" onmouseup="mouseup(this, 1)" onmousedown="doScroll(this, 1)"></div>
+		</div>
+		
+		<div id="sl"></div> 
+	</body>
+	<script src="js/updateEngine.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var m_show = document.getElementById("show");
+		var m_sl = document.getElementById("sl");
+		var m_ads = new Array();
+		var m_scrollInterval = 2000, INTERVAL = 2000;
+		var m_curIndex = 0, m_nextIndex = 0;;
+		var m_scroll = false;
+		var DIRECTION_LEFT = 0, DIRECTION_RIGHT = 1;
+		var m_direction = DIRECTION_LEFT;
+		var m_marginLeft = 0;
+		
+		for (var i = 1; i < 7; ++i) {
+			var element = document.createElement("div");
+			element.className = "ad";
+			element.id = "ad" + (i - 1);
+			var picName = "ads/ad0"+ i + ".jpg";
+			element.style.background = "url("+ picName +") no-repeat";
+			element.style.marginLeft = "0px";
+			m_ads.push(element);
+			
+			var div = document.createElement("div");
+			div.className = "picdiv";
+			div.id = "div"+i;
+			var pic = document.createElement("img");
+			div.style.zIndex = 0;
+			div.onmouseenter = function(){
+				mouseenter(this);
+			}
+			div.onmouseleave = function(){
+				mouseleave(this);
+			}
+			pic.style.width = "121px";
+			pic.src = picName;
+			div.appendChild(pic);
+			m_sl.appendChild(div);
+		}
+		
+		m_show.appendChild(m_ads[0]);
+//		m_show.appendChild(m_ads[1]);
+			
+		function autoScroll (dt) {
+			if(m_scroll){
+				return;
+			}
+			m_scrollInterval -= dt;
+			if(m_scrollInterval <= 0){
+				m_scrollInterval = INTERVAL;
+				scrollLeft();
+			}
+//			document.getElementById("i1").innerHTML = m_scrollInterval;
+		}
+		
+		function scrollLeft(){
+			var nextIndex = m_curIndex + 1;
+			if(nextIndex > 5){
+				nextIndex = 0;
+			}
+			m_marginLeft = 0;
+			m_ads[nextIndex].style.marginLeft = "0px";
+			m_show.appendChild(m_ads[nextIndex]);
+			m_direction = DIRECTION_LEFT;
+			m_scroll = true;
+		}
+		
+		function scrollRight () {
+			m_nextIndex = m_curIndex - 1;
+			if(m_nextIndex < 0){
+				m_nextIndex = 5;
+			}
+			m_marginLeft = -730;
+			m_ads[m_nextIndex].style.marginLeft = "-730px";
+			m_show.insertBefore(m_ads[m_nextIndex], m_ads[m_curIndex]);
+			m_direction = DIRECTION_RIGHT;
+			m_scroll = true;
+			document.getElementById("i1").innerHTML = m_nextIndex + ", " + m_curIndex;
+		}
+		
+		function scroll (dt) {
+			if(!m_scroll){
+				return;
+			}
+			if (m_direction == DIRECTION_LEFT) {
+				m_marginLeft -= dt;
+				var isEnd = false;
+				if(m_marginLeft <= -730){
+					m_marginLeft = -730;
+					m_scroll = false;
+					isEnd = true;
+				}
+//				document.getElementById("ad" + m_curIndex).style.marginLeft = m_marginLeft + "px";
+				m_ads[m_curIndex].style.marginLeft = m_marginLeft + "px";
+				if (isEnd) {
+					m_show.removeChild(m_ads[m_curIndex]);
+					m_curIndex++;
+					if(m_curIndex > 5){
+						m_curIndex = 0;
+					}
+				}
+			}else{
+				m_marginLeft += dt;
+				var isEnd = false;
+				if(m_marginLeft >= 0){
+					m_marginLeft = 0;
+					m_scroll = false;
+					isEnd = true;
+				}
+//				document.getElementById("ad" + m_nextIndex).style.marginLeft = m_marginLeft + "px";
+				m_ads[m_nextIndex].style.marginLeft = m_marginLeft + "px";
+				if (isEnd) {
+					m_show.removeChild(m_ads[m_curIndex]);
+					m_curIndex--;
+					if(m_curIndex < 0){
+						m_curIndex = 5;
+					}
+				}
+			}
+		}
+		
+		function doScroll (obj, direction) {
+			if (direction == DIRECTION_LEFT) {
+				obj.style.background = "url('ads/lblack.png') no-repeat";
+				obj.style.backgroundPosition = "center";
+				if(!m_scroll){
+					scrollRight();
+				}
+			}else{
+				obj.style.background = "url('ads/rblack.png') no-repeat";
+				obj.style.backgroundPosition = "center";
+				if(!m_scroll){
+					scrollLeft();
+				}
+			}
+		}
+		
+		scheduleUpdate(autoScroll);
+		scheduleUpdate(scroll);
+		
+		function mouseup (obj, direction) {
+			if (direction == DIRECTION_LEFT) {
+				obj.style.background = "url('ads/lwhite.png') no-repeat";
+				obj.style.backgroundPosition = "center";
+			}else{
+				obj.style.background = "url('ads/rwhite.png') no-repeat";
+				obj.style.backgroundPosition = "center";
+			}
+		}
+		
+		function mouseenter (obj) {
+			obj.style.zIndex = 1;
+			obj.firstElementChild.style.width = "242px";
+			obj.style.left = "-60px";
+			obj.style.top = "-30px";
+		}
+		
+		function mouseleave (obj) {
+			obj.style.zIndex = 0;
+			obj.firstElementChild.style.width = "121px";
+			obj.style.left = "0px";
+			obj.style.top = "0px";
+		}
+		
+		
+	</script>
+</html>
