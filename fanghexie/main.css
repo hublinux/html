@@ -1,0 +1,60 @@
+body{background-color:#cce4b4;margin:0;}
+a:hover{text-decoration:underline;}
+a:active{text-decoration:none;}
+a:link,a:visited{color:#3280ab;text-decoration:none;}
+a img{border:none;}
+#neiron{background-color:#eef4d9;border-top:3px solid #fff;border-bottom:3px solid #fff;padding-top:8px;}
+#zaixianban{font-size:14px;background-color:#cce4b4;}
+#youcecaidan{background-color:#cce4b4;padding:0px;}
+.xuxian{border-top:1px dashed #ccc;margin-top:5px;margin-bottom:5px;overflow:hidden;}
+.gaodu{margin-top:4px;}
+#main{border:1px solid #cce4b4;background-color:#fff;margin-bottom:6px;}
+#main #co{height:345px;width:572px;border:1px solid #a7a6aa;font-size:14px;}
+#main .modes{color:#033;text-decoration:none;display:block;margin-right:5px;margin-left:5px;padding:5px;padding-left:5px;border-top:1px dotted #fff;}
+#main .modes:hover{background-color:#d1e8c3;border-top:1px solid #fff;border-right:1px solid #fff;margin-left:0px;padding-left:10px;}
+#main .shown_mode{background-color:#eaf7e0;font-size:12px;margin:5px;padding:5px;}
+#main .hidden_mode{display:none;}
+#main .modes_sel{color:#000;text-decoration:none;background-color:#fff;display:block;font-weight:700;margin:0px;margin-right:5px;padding:5px;padding-left:10px;}
+#main td{vertical-align:top;font-size:14px;}
+#anniu{margin-top:6px;}
+#separator{width:18px;}
+.xianlu{vertical-align:middle;top:160px;position:relative;left:220px;font-size:12px;}
+.zairu{vertical-align:middle;top:170px;position:relative;left:230px;}
+.zairuimg{vertical-align:middle;top:175px;position:relative;left:275px;}
+#copyshow{color:#090;font-size:12px;position:relative;top:8px;left:10px;}
+#DownloadBox{font-size:12px;border:1px dashed #b2d1a3;background-color:#f2f6cf;margin-top:8px;margin-bottom:8px;}
+#Download{font-size:12px;color:#eaf2ea;line-height:20px;background-color:#327a2e;width:100px;margin:4px;padding:2px;}
+.unshorturl{background-color:#fff;border-right:#ccc 1px dotted;border-top:#ccc 1px dotted;display:block;font-size:12px;border-left:#ccc 1px dotted;border-bottom:#ccc 1px dotted;margin:5px 10px 3px;padding:2px 15px;}
+.downurl{background-color:#fff;border:2px solid #b2d1a3;padding:3px 10px;margin-left:10px;font-size:16px;font-weight:bold;}
+.LinkBox{background-color:#a9c78f;font-size:12px;padding:3px;}
+.LinkBox a:link,.LinkBox a:visited,.LinkBox a:hover{color:#fff;}
+.urlbox{font-size:12px;color:#3280ab;background-color:#fff;border:0px;padding:0px;margin:0px;}
+.liuyan{color:#fff;background-color:#afce94;border:0px;padding-left:5px;padding-right:5px;}
+.pbtn1{border-top:solid 1px #d8eec2;border-left:solid 1px #d8eec2;border-right:solid 1px #455a3a;border-bottom:solid 1px #455a3a;color:#fff;background-color:#afce94;padding:4px;}
+.pbtn2{border-top:solid 1px #d8eec2;border-left:solid 1px #d8eec2;border-right:solid 1px #455a3a;border-bottom:solid 1px #455a3a;color:#fff;background-color:#afce94;padding:1px;}
+.undo{background:url(allbgs.png) no-repeat -1px -120px;height:21px;width:27px;}
+.redo{background:url(allbgs.png) no-repeat -1px -135px;height:21px;width:27px;}
+#youlian{background-color:#f7faec;font-size:12px;}
+.logo{background:url(allbgs.png) no-repeat 0px 0px;height:48px;padding-left:45px;}
+.Download{background:url(allbgs.png) no-repeat 0px -48px;height:71px;padding-left:78px;}
+.moshi{background-color:#daedc8;height:20px;margin-left:25px;margin-right:25px;position: relative;top: 16px;}
+.moshidw{position: relative;top: -1px;}
+.jiantou{font-size:24px;color:#dedede;font-weight:bold;letter-spacing:-2px;}
+.tishi{vertical-align:middle;top:150px;position:relative;left:225px;font-weight:bold;color:#FF0000;}
+
+a#help {position:relative;}
+a#help:link,a#help:hover {text-decoration:none;color:#000;}
+a#help span {display:none;text-decoration:none;}
+a#help:visited {color:#000;text-decoration:underline;}
+a#help:hover #tip_info1 {width:166px;display:block;border:1px solid #FDB802;background:#F7EE80;padding:2px;position:absolute;top:0px;left:-124px;color:#000000}
+a#help:hover #tip_info2 {width:166px;display:block;border:1px solid #FDB802;background:#F7EE80;padding:2px;position:absolute;top:0px;left:-101px;color:#000000}
+a#help:hover #tip_info3 {width:166px;display:block;border:1px solid #FDB802;background:#F7EE80;padding:2px;position:absolute;top:0px;left:-137px;color:#000000}
+
+#CHundo{background:url(allbgs.png) no-repeat -1px -120px;height:21px;width:27px;}
+#CHundo.disable{background:url(allbgs.png) no-repeat -27px -120px;}
+#CHredo{background:url(allbgs.png) no-repeat -1px -135px;height:21px;width:27px;}
+#CHredo.disable{background:url(allbgs.png) no-repeat -27px -135px;}
+
+.STYLE1{font-size:12px;}
+.STYLE2{font-size:12px;color:#999;}
+.STYLE3{color:#c2c2c2;}

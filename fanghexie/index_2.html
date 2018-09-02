@@ -1,0 +1,216 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>网络发言防和谐器 官方网站_在线敏感词过滤|百度和谐测试器 </title>
+<meta name="keywords" content="网络发言防和谐器,百度贴吧和谐测试器">
+<meta name="description" content="提供全网络通用的在线敏感词过滤服务，也是一款绿色、免费、开源的自由软件。">
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body onLoad="checkCopyer();">
+<!--页顶开始-->
+<table width="770" align="center" cellspacing="5" ><tr><td width="48"><div class="logo"></div></td>
+<td><strong>网络发言防和谐器</strong><div class=gaodu></div><span class="STYLE1">提供全网络通用的在线敏感词过滤服务，也是一款绿色、免费、开源的自由软件。</span></td></tr></table>
+<!--页顶结束-->
+
+
+  <!--在线版栏-->
+
+<table width="770" id="zaixianban" cellspacing="5" align="center"><tr><td><span class="txt2"><b>网络发言防和谐器 在线版</b></td><td><span class="STYLE1"><div id="minganci0"></div></td><td width="300"><div align="right"><span class="STYLE2">线路切换：<a href="index.html">官方线路(词库新)</a>丨本站线路(词库旧)</span></div></td></tr></table>
+<table width="770" align="center" cellspacing="0" id="main"><tr><td><form action="" method="post" name="form" id="form">
+<div id="load"><span class="zairu">在线版载入中，请稍候</span><br>
+<span class="zairuimg"><img src="loading.gif" width="50" height="11" /></span><br></div>
+</td><a href="index.html">index</a>
+<td width="180" id="youcecaidan"><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="height:395px;">
+<div id="youcecaidan_A">
+<div align="center"><div class="moshi"></div><strong class="moshidw">请选择模式</strong></div>
+<a href="#" class="modes_sel" id="modemenu1" onClick="changeMode(1);">敏感词过滤</a>
+<div id="mode1" class="shown_mode">
+可以自动分隔、过滤敏感词<br>
+收录部分来自绿坝、百度和谐测试器及相关软件的敏感词
+<br>过滤级别选择：<select id="level_select" class="combo" onChange="level_select_change()">
+<option value="low">低(荐)</option><option value="medium">中</option><option value="high">高</option>
+</select>
+<br>分隔符：<input type="text" maxlength="1"  size="1" id="separator"  value="^"/>  <input type="button"  onclick="generateSeparator(1)" class="pbtn2" value="随机"/>　<a href="#" id="help">[？]<span id="tip_info1">百度贴吧只能用中文分隔符，偏旁、括号内打字都无效！若发不出可更换分隔符再试！</span></a>
+</div>
+<a href="#" class="modes" id="modemenu2" onClick="changeMode(2);">百度贴吧和谐测试器 &#x2750;</a> 
+<div id="mode2" class="hidden_mode">
+<label><input value="1" type="checkbox" id="specialTB" name="specialTB"  onClick="specialTB_click()">敏感贴吧模式</label> <a href="http://174.136.35.43/~xiaohexi/stb.html" id="help" target="_blank">[？]<span id="tip_info2">受到百度特别照顾的贴吧需要勾选 [点击查看]</span></a>
+<br>强烈推荐在贴吧使用它<br><span class="txt_hui">此功能使用第三方提供的在线服务，点击“开始处理”将自动打开他们的网站进行处理。</span></div>
+<a href="#" class="modes" id="modemenu3" onClick="changeMode(3);">文字竖排</a> 
+<div id="mode3" class="hidden_mode">
+发出去后效果比看上去的要好
+<br>每页 
+<SELECT id=x onChange="x_change()"><OPTION value=5>5</OPTION><OPTION value=8>8</OPTION><OPTION value=9>9</OPTION><OPTION value=10 selected>10</OPTION><OPTION value=11>11</OPTION><OPTION value=12>12</OPTION><OPTION value=13>13</OPTION><OPTION value=14>14</OPTION><OPTION value=15>15</OPTION><OPTION value=16>16</OPTION><OPTION value=17>17</OPTION><OPTION value=18>18</OPTION><OPTION value=19>19</OPTION><OPTION value=20>20</OPTION><OPTION value=25>25</OPTION><OPTION value=30>30</OPTION></SELECT>
+竖行,<br>每竖 
+<SELECT id=y onChange="y_change()"><OPTION value=5>5</OPTION><OPTION value=8>8</OPTION><OPTION value=9>9</OPTION><OPTION value=10>10</OPTION><OPTION value=11>11</OPTION><OPTION value=12>12</OPTION><OPTION value=13>13</OPTION><OPTION value=14>14</OPTION><OPTION value=15>15</OPTION><OPTION value=16>16</OPTION><OPTION value=17>17</OPTION><OPTION value=18>18</OPTION><OPTION value=19>19</OPTION><OPTION value=20 selected>20</OPTION><OPTION value=25>25</OPTION><OPTION value=30>30</OPTION></SELECT>
+个字,
+<br>使用 <SELECT id=tbl onChange="tbl_change()"><OPTION value=0>粗实线+细实线</OPTION><OPTION value=1 selected>双实线+细实线</OPTION><OPTION value=2>细实线+细虚线</OPTION><OPTION value=3>无线框</OPTION><OPTION value=4>无头尾线框</OPTION></SELECT>
+</div>
+<a href="#" class="modes" id="modemenu4" onClick="changeMode(4);">强行分隔</a> 
+<div id="mode4" class="hidden_mode">
+强行在每个字符间插入分隔符。
+<br>分隔符
+<select name="fgf1" id="fgf1"><option value="囘">囘</option><option value="卝">卝(贴吧不能使用)</option><option value="丨">丨(贴吧不能使用)</option></select>
+</div>
+<a href="#" class="modes" id="modemenu5" onClick="changeMode(5);">倒排文字</a> 
+<div id="mode5" class="hidden_mode">
+让整篇文章倒转过来，当然你得习惯从右往左看。
+</div>
+<a href="#" class="modes" id="modemenu6" onClick="changeMode(6);">终极过滤</a> 
+<div id="mode6" class="hidden_mode">
+使用自制的火星文、同音字字库还可以过滤英文、数字，惨无人道地替换正是你所要的。
+</div>
+<a href="#" class="modes" id="modemenu7" onClick="changeMode(7);">文章排版工具</a> 
+<div id="mode7" class="hidden_mode">
+让每个自然段落前空两格<br>并在段落后换两行。
+</div>
+</div>
+</td>
+
+  </tr>
+  <tr>
+    <td>
+</td>
+  </tr>
+</table>
+</td></form>
+  </tr>
+</table>
+<!--下载栏，根据授权协议不可去除此栏！-->
+<table width="770" id="DownloadBox" cellspacing="7" align="center"><tr><td width="75"><div class="Download"></div></td>
+<td width="675"><strong>&nbsp;&nbsp;绿色单机版下载</strong> <span class="STYLE1"><font color="#FF0000">支持文字转图片并一键上传，可自动更新！</font> (“官方下载”会自动跳转到最新下载地址)</span>
+<div class=xuxian></div>
+<SPAN class=unshorturl>官方下载：<A href="http://fanhexie.googlecode.com/files/fanghexieqi.rar" target="_blank">本地下载</A> <A href="http://fanghexie.error403.at/" target="_blank">网盘下载(一)</A> <A href="http://fanghexie.download.sh/" target="_blank">网盘下载(二)</A></SPAN>
+<SPAN class=unshorturl>软件站下载：<A href="http://www.skycn.com/soft/64414.html" target="_blank">天空软件站</A> <A href="http://www.xdowns.com/soft/8/88/2010/Soft_58651.html" target="_blank">绿色软件联盟</A> <A href="http://www.crsky.com/soft/24307.html" target="_blank">非凡软件站</A> <A href="http://www.greendown.cn/soft/19767.html" target="_blank">霏凡旗下绿色下载站</A> <A href="http://www.52z.com/soft/22538.html" target="_blank">飞翔下载</A> <A href="http://www.duote.com/soft/30272.html" target="_blank">多特软件站</A></SPAN>
+</td></tr></table>
+<!--告示栏-->
+<table width="770" id="main" cellspacing="10" align="center"><tr><td>
+<strong>网站源码打包下载：</strong>
+<br><span class="STYLE1">欢迎各位站长下载并上传全站源码以建立分站：<a href="http://code.google.com/p/fanhexie/downloads/list" target="_blank">全站源码打包下载</a> 并到右下角留言登记下E-mail以供有更新时通知你。</span>
+<div class=xuxian></div>
+<strong>法律声明：</strong><span class="STYLE2">本程序出于编写者对编程的爱好及供网友因脑残的网站敏感词检测系统造成的正常帖发不出时使用，不得用与发布非法内容。</span>
+</td></tr></table>
+<!--友链栏-->
+<table width="770" id="youlian" cellspacing="5" align="center"><tr><td>友情链接:<A href="http://www.h1866.com/" target="_blank">网络发言防和谐器官方主站</A></td></tr></table>
+<!--友链栏结束-->
+</div>
+<!--页底，根据授权协议不可修改和删除“fanhexie.googlecode.com”相关代码-->
+<table width="770" align="center" cellspacing="5"><tr>
+<td class="STYLE1">最新地址公布页:<a href="http://code.google.com/p/fanhexie/" target="_blank">fanhexie.googlecode.com</a>丨版权没有·盗版不究
+<br>开发者:自来水 CHurricane</td>
+<td width="100"><script type="text/javascript" src="http://js.tongji.linezing.com/3498403/tongji.js">
+</script><noscript><a href="http://www.linezing.com">
+<img src="http://img.tongji.linezing.com/3498403/tongji.gif"/></a></noscript>
+
+
+</td></tr></table>
+<!--页底结束-->
+<script type="text/javascript" src="minganci2.js" charset="utf-8"></script>
+<script type="text/javascript" src="bin.js" charset="utf-8"></script>
+<script language="JavaScript">
+function $(_i){return document.getElementById(_i);}
+var m=1;var clip = null;
+function doIt(){if (m==2)return true;else if (m==1) {var str_select=$('level_select').value;minganci(document.form.co.value,str_select);}else if (m==3) convert1(); else if (m==4) convert_fgf(); else if (m==5) convert_dd();else if (m==6) convert_hxw();else if (m==7) convert_paiban();$('d_clip_container').style.display = "block";if (clip==null){copyer_init();}return false;}
+function changeMode(i) {$('mode'+m).className = 'hidden_mode';$('mode'+i).className = 'shown_mode';$('modemenu'+m).className = 'modes';$('modemenu'+i).className = 'modes_sel';m=i;$("youcecaidan_B_bigm").value=i;changeBView(i);}
+function copyer_init() {clip = new ZeroClipboard.Client();clip.setHandCursor(false);
+/*clip.addEventListener('load', function (client) {alert("Flash movie loaded and ready.");});*/
+clip.addEventListener('mouseOver', function (client) {clip.setText($('co').value);});
+clip.addEventListener('complete', function (client, text) {$('copyshow').innerHTML = '复制成功！';window.timer1 = setTimeout(ClearCopyShow,3000);});clip.glue( 'd_clip_button', 'd_clip_container' );}
+function CopyForIE(){window.clipboardData.setData("Text", $('co').value);$('copyshow').innerHTML = '复制成功！';window.timer1 = setTimeout(ClearCopyShow,3000);}
+function ClearCopyShow(){$('copyshow').innerHTML = '';clearTimeout(window.timer1);}
+function checkCopyer(){if (window.clipboardData) {clip = "IE Mode";$('d_clip_button').style.display = "none";} else {$('d_clip_button_ie').style.display = "none";}}
+</script>
+<script type="text/javascript" defer>
+var loaderror = false;
+try{
+	if(typeof minganci=="undefined"){$("load").innerHTML="<div class=\"tishi\">本站线路载入失败<br>请选择使用右上角的“官方线路”<br>或<input type=\"button\" value=\"刷新\" onclick=\"location=location\" class=\"pbtn2\">页面重试</div>";loaderror=true;};
+	if(typeof charPYStr=="undefined"){$("load").innerHTML="<div class=\"tishi\">本站线路载入失败<br>请选择使用右上角的“官方线路”<br>或<input type=\"button\" value=\"刷新\" onclick=\"location=location\" class=\"pbtn2\">页面重试</div>";loaderror=true;};
+}catch(e){}
+if(!loaderror){
+	$("load").innerHTML=$("loading").innerHTML.replace(/{textareaco}/ig,"co"); 
+	$("loading").innerHTML="";
+}
+var CHCommand = {
+	pool:[],
+	point:-1,
+	recordable:true,
+	redo:function(){
+		CHCommand.recordable=false;
+		CHCommand.point=CHCommand.point+1;
+		$("co").value = CHCommand.pool[CHCommand.point];
+		CHCommand.stateChange();
+		CHCommand.recordable=true;
+	},
+	undo:function(){
+		CHCommand.recordable=false;
+		CHCommand.point=CHCommand.point-1;
+		$("co").value = CHCommand.pool[CHCommand.point];
+		CHCommand.stateChange();
+		CHCommand.recordable=true;
+	},
+	stateChange:function(){
+		if(CHCommand.point > 0){
+			$("CHundo").disabled = false;
+			$("CHundo").className = "";
+		}else{
+			$("CHundo").disabled = true;
+			$("CHundo").className = "disable";
+		};
+		if(CHCommand.point < (CHCommand.pool.length-1)){
+			$("CHredo").disabled = false;
+			$("CHredo").className = "";
+		}else{
+			$("CHredo").disabled = true;
+			$("CHredo").className = "disable";
+		};
+	},
+	onChange:function(){
+		var temp = $("co").value;
+		if( (CHCommand.point<0) || (CHCommand.recordable && CHCommand.pool[CHCommand.point] != temp)){
+			if(CHCommand.point < CHCommand.pool.length-1){
+				CHCommand.pool[CHCommand.point+1] = temp;
+				while (CHCommand.pool.length > (CHCommand.point+2)){CHCommand.pool.pop();}
+			} else {
+				CHCommand.pool.push(temp);
+			}
+			CHCommand.point=CHCommand.point+1;
+			CHCommand.stateChange();
+		}
+	},
+	onSubmit:function(){
+		CHCommand.recordable=true;
+		var temp = doIt();
+		if (window.addEventListener) CHCommand.onChange();
+		CHCommand.recordable=false;
+		if(temp){ $("form").action = "http://174.136.35.43/~xiaohexi/php_test.php";$("form").target = "_blank";}
+		else {$("form").action = "javascript:void(0);";$("form").target = "_self"; };
+		return temp;
+	},
+	init:function(){
+		//$("form").action = "javascript:void(0);";
+		if (window.addEventListener){
+		 	$("co").addEventListener("change", CHCommand.onChange, false);
+		 	$("co").addEventListener("propertychange", CHCommand.onChange, false);
+		 	$("form").addEventListener("submit", CHCommand.onSubmit, false);
+		} else if (window.attachEvent){
+		 	$("co").attachEvent("onchange", CHCommand.onChange);
+		 	$("co").attachEvent("onpropertychange", CHCommand.onChange);
+		 	$("form").attachEvent("onsubmit", CHCommand.onSubmit);
+		}
+		CHCommand.onChange();
+	}
+};
+try{
+document.getElementById("minganci0").innerHTML=document.getElementById("loading1").innerHTML;
+}catch(e){}
+try{
+	$("word_number").innerHTML=""+(ref.low.length+ref.medium.length+ref.high.length)+"";
+}catch(e){}
+try{
+	CHCommand.init();
+}catch(e){}
+</script>
+<!--第三方统计代码-->
+</body>
+</html>
