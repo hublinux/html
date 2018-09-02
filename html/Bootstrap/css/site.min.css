@@ -1,0 +1,399 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+}
+h1 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.h1 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+h2 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.h2 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+h3 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.h3 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+h4 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.h4 {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+.lead {
+	font-family: "Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+body {
+	padding-top: 30px;
+}
+@media all and (min-width:768px)
+{
+.navbar {
+	min-height: 40px;
+}
+.navbar-nav > li > a {
+	padding-top: 11px; padding-bottom: 11px; font-size: 14px;
+}
+.navbar-brand {
+	height: 42px; line-height: 42px; padding-top: 0px; padding-bottom: 0px;
+}
+}
+.jumbotron {
+	background: linear-gradient(45deg, rgb(2, 0, 49) 0px, rgb(109, 51, 83) 100%); padding: 40px 0px; text-align: center; color: rgb(255, 255, 255); position: relative; box-shadow: inset 0px 3px 7px rgba(0,0,0,0.2), inset 0px -3px 7px rgba(0,0,0,0.2); text-shadow: 0px 1px 3px rgba(0,0,0,0.4), 0px 0px 30px rgba(0,0,0,0.075); -webkit-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2); -moz-box-shadow: inset 0 3px 7px rgba(0, 0, 0, .2), inset 0 -3px 7px rgba(0, 0, 0, .2);
+}
+.jumbotron a {
+	transition:0.2s ease-in-out; color: rgba(255, 255, 255, 0.5); -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out;
+}
+.jumbotron aa:hover {
+	color: rgb(255, 255, 255); text-shadow: 0px 0px 10px rgba(255,255,255,0.25);
+}
+.jumbotron .container {
+	position: relative; z-index: 2;
+}
+.jumbotron::after {
+	background: url("../img/bs-docs-masthead-pattern.png") center; left: 0px; top: 0px; right: 0px; bottom: 0px; display: block; position: absolute; content: ""; opacity: 0.4;
+}
+@media not all, not all, not all
+{
+.jumbotron::after {
+	background-size: 150px 150px;
+}
+}
+.masthead {
+	padding: 60px 0px 80px; color: rgb(255, 255, 255); margin-bottom: 0px;
+}
+@media screen and (min-width:768px)
+{
+.masthead {
+	padding: 90px 0px 110px;
+}
+}
+.masthead h1 {
+	line-height: 1; letter-spacing: -2px; font-size: 60px; font-weight: 700;
+}
+@media screen and (min-width:768px)
+{
+.masthead h1 {
+	font-size: 90px;
+}
+}
+@media screen and (min-width:992px)
+{
+.masthead h1 {
+	font-size: 100px;
+}
+}
+.masthead h2 {
+	line-height: 1.25; font-size: 18px; font-weight: 200;
+}
+@media screen and (min-width:768px)
+{
+.masthead h2 {
+	font-size: 24px;
+}
+}
+@media screen and (min-width:992px)
+{
+.masthead h2 {
+	font-size: 30px;
+}
+}
+.masthead p {
+	line-height: 1.25; font-size: 40px; font-weight: 200;
+}
+.masthead .masthead-button-links {
+	margin-top: 30px;
+}
+.masthead-links {
+	list-style: none; margin: 0px; padding: 0px;
+}
+.masthead-links li {
+	padding: 0px 10px; color: rgba(255, 255, 255, 0.25); display: inline;
+}
+.masthead-links li a:hover {
+	color: rgb(255, 255, 255);
+}
+.subhead {
+	text-align: center; border-bottom-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid;
+}
+@media screen and (min-width:768px)
+{
+.subhead {
+	text-align: left;
+}
+}
+.subhead h1 {
+	font-size: 60px;
+}
+.subhead p {
+	margin-bottom: 20px;
+}
+@media screen and (min-width:768px)
+{
+.subhead p {
+	text-align: left;
+}
+}
+.btn-primary.btn-shadow {
+	border: 0px currentColor; border-image: none; color: rgb(255, 255, 255); box-shadow: inset 0px -4px 0px #2a6496; -webkit-box-shadow: inset 0 -4px 0 #2a6496;
+}
+.btn-lg.btn-shadow {
+	padding: 13px 35px 17px;
+}
+.bc-social {
+	padding: 15px 0px; text-align: center; border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(221, 221, 221); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; background-color: rgb(245, 245, 245);
+}
+.bc-social-buttons {
+	list-style: none; padding-left: 0px; margin-bottom: 0px; margin-left: 0px;
+}
+.bc-social-buttons li {
+	color: rgb(85, 85, 85); line-height: 1; display: inline-block;
+}
+.bc-social-buttons li .fa {
+	font-size: 18px; margin-right: 3px;
+}
+.bc-social-buttons li .fa-weibo {
+	font-size: 20px;
+}
+.bc-social-buttons li a {
+	color: rgb(85, 85, 85);
+}
+.bc-social-buttons li.social-qq:hover {
+	color: rgb(66, 139, 202);
+}
+.bc-social-buttons li.social-weibo a:hover {
+	color: rgb(217, 83, 79);
+}
+.bc-social-buttons > li + li::before {
+	padding: 0px 10px; color: rgb(204, 204, 204); content: "|";
+}
+.projects .thumbnail {
+	border-radius: 0px; text-align: center; margin-right: auto; margin-bottom: 30px; margin-left: auto; display: block; max-width: 310px;
+}
+.projects .thumbnail .caption {
+	height: 200px; color: rgb(85, 85, 85); -ms-overflow-y: hidden;
+}
+.projects .thumbnail .caption a:hover {
+	text-decoration: none;
+}
+.projects .thumbnail .caption a:focus {
+	text-decoration: none;
+}
+.projects .thumbnail img {
+	height: auto; max-width: 100%;
+}
+.projects-header {
+	margin: 60px auto 40px; width: 60%; text-align: center; font-weight: 200; display: block;
+}
+.projects-header h2 {
+	letter-spacing: -1px; font-size: 30px;
+}
+@media screen and (min-width:768px)
+{
+.projects-header h2 {
+	font-size: 42px;
+}
+}
+.nav-sub {
+	padding-top: 10px; padding-bottom: 10px; margin-top: 70px; border-top-color: rgb(238, 238, 238); border-top-width: 1px; border-top-style: solid;
+}
+.footer {
+	padding: 30px 0px; color: rgb(119, 119, 119); margin-top: 70px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid;
+}
+.footer a {
+	color: rgb(119, 119, 119);
+}
+.footer-top .about > div {
+	height: 110px; margin-bottom: 10px;
+}
+.footer-top .about > div h4 {
+	color: rgb(86, 61, 124); font-size: 16px;
+}
+.footer-bottom {
+	font-size: 13px;
+}
+.footer-bottom ul > li {
+	padding: 0px;
+}
+.footer-bottom ul > li + li::before {
+	padding: 0px 10px; color: rgb(204, 204, 204); content: "|";
+}
+#scrollUp {
+	border: currentColor; border-image: none; width: 46px; height: 46px; text-align: center; right: 20px; bottom: 20px; color: rgb(238, 238, 238); line-height: 1; overflow: hidden; font-size: 40px; text-decoration: none; opacity: 0.8; background-color: rgb(119, 119, 119);
+}
+#scrollUp:hover {
+	background-color: rgb(51, 51, 51);
+}
+@media screen and (min-width:992px)
+{
+#scrollUp {
+	bottom: 100px;
+}
+}
+.bc-sidebar {
+	margin-top: 30px;
+}
+.bc-sidebar > ul > li > a {
+	margin: 0px 0px -1px; padding: 8px 14px; border: 1px solid rgb(229, 229, 229); border-image: none; display: block;
+}
+.excerpt-list {
+	margin-top: 60px;
+}
+.excerpt {
+	padding: 20px 20px 20px 24px; border: 1px solid rgb(238, 238, 238); border-image: none; margin-bottom: 10px; position: relative; min-height: 120px;
+}
+.excerpt-title {
+	font-size: 24px; margin-top: 0px;
+}
+.excerpt-title a {
+	color: rgb(85, 85, 85);
+}
+.excerpt-title a:hover {
+	color: rgb(48, 113, 169);
+}
+.excerpt-title a:active {
+	color: rgb(48, 113, 169);
+}
+.excerpt-meta {
+	bottom: 12px; position: absolute;
+}
+.excerpt-tags {
+	color: rgb(119, 119, 119);
+}
+.excerpt-tags .glyphicon {
+	top: 2px; color: rgb(238, 238, 238); position: relative;
+}
+.excerpt-tags a {
+	color: rgb(119, 119, 119); font-size: 12px;
+}
+.excerpt-tags span {
+	color: rgb(119, 119, 119); font-size: 12px;
+}
+.post {
+	margin-top: 60px; margin-right: auto; margin-left: auto; display: block; position: relative; max-width: 680px;
+}
+.post-header h1 {
+	margin: 0px 0px 45px; text-align: center; font-size: 32px; position: relative;
+}
+.post-header h2 {
+	margin: 0px 0px 45px; text-align: center; font-size: 32px; position: relative;
+}
+@media all and (min-width:768px)
+{
+.post-header h1 {
+	font-size: 36px;
+}
+.post-header h2 {
+	font-size: 36px;
+}
+}
+.post-header h1::after {
+	margin: 0px 0px 0px -30%; left: 50%; width: 60%; bottom: 0px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid; position: absolute; content: "";
+}
+.post-header h2::after {
+	margin: 0px 0px 0px -30%; left: 50%; width: 60%; bottom: 0px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid; position: absolute; content: "";
+}
+.post-header h1 a {
+	padding: 65px 0px 20px; color: rgb(54, 54, 54); display: block; position: relative;
+}
+.post-header h2 a {
+	padding: 65px 0px 20px; color: rgb(54, 54, 54); display: block; position: relative;
+}
+.post-header h1 a:hover {
+	color: rgb(66, 139, 202);
+}
+.post-header h2 a:hover {
+	color: rgb(66, 139, 202);
+}
+.post-header h1 a::before {
+	margin: 0px 0px 0px -27%; left: 50%; width: 60%; bottom: -4px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid; position: absolute; content: "";
+}
+.post-header h2 a::before {
+	margin: 0px 0px 0px -27%; left: 50%; width: 60%; bottom: -4px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid; position: absolute; content: "";
+}
+.post-header h1 a::after {
+	margin: 0px 0px 0px -28%; left: 50%; width: 60%; bottom: -3px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid; position: absolute; content: "";
+}
+.post-header h2 a::after {
+	margin: 0px 0px 0px -28%; left: 50%; width: 60%; bottom: -3px; border-top-color: rgb(229, 229, 229); border-top-width: 1px; border-top-style: solid; position: absolute; content: "";
+}
+@media all and (min-width:768px)
+{
+.post-header h1 a {
+	padding-right: 65px; padding-left: 65px;
+}
+.post-header h2 a {
+	padding-right: 65px; padding-left: 65px;
+}
+}
+.post-content {
+	line-height: 1.8; padding-top: 20px; padding-bottom: 20px; font-size: 16px;
+}
+.post-content p {
+	margin-bottom: 1.8em;
+}
+.post-content pre {
+	margin-bottom: 1.8em;
+}
+.post-content ul {
+	margin-bottom: 1.8em;
+}
+.post-content ol {
+	margin-bottom: 1.8em;
+}
+.post-content dl {
+	margin-bottom: 1.8em;
+}
+.post-content form {
+	margin-bottom: 1.8em;
+}
+.post-content hr {
+	margin-bottom: 1.8em;
+}
+.post-content table {
+	margin-bottom: 1.8em;
+}
+.post-content blockquote {
+	margin-bottom: 1.8em;
+}
+.post-content blockquote {
+	font-size: 16px;
+}
+.post-content pre {
+	margin-top: -20px;
+}
+.post-content li > p {
+	margin-bottom: 5px;
+}
+.post-content img {
+	max-width: 100%;
+}
+.post-content video {
+	max-width: 100%;
+}
+.post-content embed {
+	max-width: 100%;
+}
+.post-content iframe {
+	max-width: 100%;
+}
+.post-content img {
+	height: auto;
+}
+article.page {
+	margin-top: 0px; max-width: none;
+}
+article.page .post-content {
+	padding-top: 0px;
+}
+article.page .post-content h2 {
+	margin: 40px 0px 20px; padding-bottom: 9px; font-size: 36px; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#btn-jike-video::after {
+	background: rgb(217, 83, 79); padding: 3px; border-radius: 50%; border: 1px solid rgb(212, 63, 58); border-image: none; top: 1px; right: 0px; color: rgb(255, 255, 255); line-height: 1; font-size: 12px; position: absolute; z-index: 9999999; content: "ÐÂ";
+}
