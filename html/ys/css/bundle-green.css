@@ -1,0 +1,180 @@
+body {
+	margin: 0px; color: rgb(48, 48, 48); line-height: 1.5; font-size: 12px; font-style: normal; background-image: url("images/bg.gif"); background-repeat: repeat;
+}
+td {
+	color: rgb(48, 48, 48); line-height: 1.5; font-family: Verdana,Helvetica,Arial; font-size: 12px; -ms-word-break: break-all;
+}
+.postcontent {
+	text-align: left; color: rgb(48, 48, 48); font-size: 12px; margin-top: 10px; background-image: url("/skins/green/images/bg_content.gif"); background-repeat: no-repeat;
+}
+.mytd {
+	margin: 0px; color: red; line-height: 22px; font-family: Verdana,Helvetica,Arial; font-size: 12px; font-style: normal;
+}
+.footer {
+	padding: 10px; border: 1px dashed rgb(66, 1, 0);
+}
+a:visited {
+	color: rgb(54, 105, 0); text-decoration: none;
+}
+a:active {
+	color: rgb(54, 105, 0); text-decoration: none;
+}
+a:link {
+	color: rgb(54, 105, 0); text-decoration: none;
+}
+a:hover {
+	color: rgb(141, 140, 140); text-decoration: underline;
+}
+h1 {
+	margin: 10px 0px; padding: 3px; text-align: left; color: rgb(68, 68, 68); font-size: 12px; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+h2 {
+	font-size: 13px; margin-top: 10px; margin-bottom: 3px;
+}
+h3 {
+	font-size: 14.7px;
+}
+td.banner {
+	background-position: left; border: 5px solid rgb(255, 255, 255); height: 80px; padding-left: 0px; background-repeat: no-repeat; background-color: rgb(255, 255, 255);
+}
+table.index {
+	margin-top: 0px;
+}
+.sub {
+	color: rgb(255, 255, 255); font-size: 14.7px; margin-top: 10px;
+}
+#menu h1 {
+	margin: 0px; color: red; font-family: "trebuchet ms","lucida grande",verdana,arial,sans-serif; font-size: 14.7px; font-weight: bold;
+}
+#menu ul {
+	list-style: none; margin: 0px 0px 15px 5px; padding: 0px; line-height: 160%; font-size: 12px;
+}
+a.listitem:visited {
+	color: rgb(54, 105, 0); text-decoration: none;
+}
+a.listitem:active {
+	color: rgb(54, 105, 0); text-decoration: none;
+}
+a.listitem:link {
+	color: rgb(54, 105, 0); text-decoration: none;
+}
+a.listitem:hover {
+	color: rgb(165, 42, 42); text-decoration: underline;
+}
+#Category {
+	margin: 0px; color: rgb(141, 140, 140); line-height: 22px; font-size: 11px; font-style: normal;
+}
+.Catedesc {
+	background-position: left top; text-align: justify; color: gray; text-transform: uppercase; padding-bottom: 20px; padding-left: 20px; font-family: verdana,arial,sans-serif; font-size: 12px; background-image: url("images/main_background.gif"); background-repeat: repeat-y;
+}
+h1.block_title {
+	padding: 10px 0px 0px; height: 40px; font-family: verdana,arial,sans-serif; font-size: 14.7px; font-weight: bold; margin-bottom: 30px;
+}
+h1.block_title img {
+	color: red; vertical-align: middle;
+}
+h1.block_title a:visited {
+	color: gray;
+}
+h1.block_title a:active {
+	color: gray;
+}
+h1.block_title a:link {
+	color: gray;
+}
+#header {
+	padding: 5px;
+}
+#header a {
+	color: rgb(255, 255, 255); font-family: verdana,arial,sans-serif; font-size: 16px; font-weight: bold;
+}
+div.block {
+	background-position: left top; text-align: justify; font-size: 8pt; background-image: url("images/main_background.gif"); background-repeat: repeat-y;
+}
+div.block_footer {
+	height: 10px;
+}
+div.post {
+	padding-left: 0px; margin-left: 0px;
+}
+div.posttitle {
+	color: rgb(53, 94, 160); font-family: verdana,arial,sans-serif; font-size: 14.7px; font-weight: bold;
+}
+.posttitle a:visited {
+	color: rgb(54, 105, 0); font-size: 14.7px; text-decoration: none;
+}
+.posttitle a:active {
+	color: rgb(54, 105, 0); font-size: 14.7px; text-decoration: none;
+}
+.posttitle a:link {
+	color: rgb(54, 105, 0); font-size: 14.7px; text-decoration: none;
+}
+.posttitle a:hover {
+	color: rgb(165, 42, 42); font-size: 14.7px; text-decoration: underline;
+}
+div.itemdesc {
+	text-align: right; color: gray; text-transform: uppercase; padding-top: 10px; font-family: verdana,arial,sans-serif; font-size: 11px;
+}
+div.seperator {
+	margin: 0px 0px 10px;
+}
+div.entrylistitem {
+	padding-bottom: 10px; padding-left: 20px;
+}
+a.entrylisttitle {
+	color: rgb(93, 93, 93); font-family: "trebuchet ms","lucida grande",verdana,arial,sans-serif; font-size: 14px; font-weight: bold;
+}
+a.entrylisttitle:visited {
+	color: rgb(93, 93, 93); font-family: "trebuchet ms","lucida grande",verdana,arial,sans-serif; font-size: 14px; font-weight: bold;
+}
+a.entrylisttitle:link {
+	color: rgb(93, 93, 93); font-family: "trebuchet ms","lucida grande",verdana,arial,sans-serif; font-size: 14px; font-weight: bold;
+}
+a.entrylisttitle:active {
+	color: rgb(93, 93, 93); font-family: "trebuchet ms","lucida grande",verdana,arial,sans-serif; font-size: 14px; font-weight: bold;
+}
+div.moreinfo {
+	text-align: justify; font-size: 8pt;
+}
+div.moreinfotitle {
+	color: gray; font-family: "trebuchet ms","lucida grande",verdana,arial,sans-serif; font-size: 14.7px; font-weight: bold;
+}
+commentform {
+	font-size: 12px;
+}
+div.comment_footer {
+	text-align: right; color: rgb(141, 140, 140);
+}
+div.comments {
+	font-size: 12px;
+}
+div.comment {
+	margin: 10px 0px; padding: 10px; border: 1px dashed rgb(221, 221, 221); background-color: rgb(251, 251, 251);
+}
+div.comment_author {
+	margin: 5px 0px;
+}
+div.comment_content {
+	margin: 5px 0px;
+}
+#postcomment {
+	padding: 10px; border: 1px solid rgb(221, 221, 221); width: 435px; text-align: justify; font-size: 12px; margin-top: 15px; background-color: rgb(251, 251, 251);
+}
+#postcomment div {
+	margin: 5px 0px; color: gray; font-size: 10px; font-weight: bold;
+}
+#postcomment input.text {
+	line-height: 130%; font-family: verdana; font-size: 14.7px;
+}
+textarea {
+	line-height: 130%; font-family: verdana; font-size: 14.7px;
+}
+#menu_mylinks a {
+	margin-right: 5px;
+}
+#main {
+	padding: 5px;
+}
+#sidebar {
+	border-left-color: rgb(204, 204, 204); border-left-width: 1px; border-left-style: solid;
+}
