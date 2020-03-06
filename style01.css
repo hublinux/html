@@ -1,3 +1,22 @@
+ 
+/*div{ 
+          width:200px; 
+          height:200px; 
+          background-color:#fff; 
+          border:5px solid green; 
+          线的粗细  线的形状 线的颜色 
+          border-color:green yellow pink; 
+          border-style:ridge groove outset inset; 
+          border-width:10px 20px 30px 40px; 
+} 
+*/ 
+.ad{    
+          width:200px; 
+          height:200px; 
+          border:5px solid green; 
+          border-radius:50%; 
+} 
+
 p{	
 	color:red;
 	text-indent:30px;
