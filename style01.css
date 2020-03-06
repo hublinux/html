@@ -1,5 +1,7 @@
  
-/*div{ 
+/*
+*/ 
+div{ 
           width:200px; 
           height:200px; 
           background-color:#fff; 
@@ -9,7 +11,7 @@
           border-style:ridge groove outset inset; 
           border-width:10px 20px 30px 40px; 
 } 
-*/ 
+
 .ad{    
           width:200px; 
           height:200px; 
