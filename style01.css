@@ -1,0 +1,22 @@
+p{	
+	color:red;
+	text-indent:30px;
+	text-align:center;
+	text-decoration:line-through;
+	word-spacing:30px;
+	letter-spacing:30px;
+	direction:ltr;
+	width:200px;
+	height:30px;
+	background:green;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+a{
+	text-decoration:none;
+}
+ul li{	
+	text-shadow:0px 0px 3px #ff0000;
+	font-size:0pt; font-weight:600; color:#ff0000;">	line-height:20px;
+}
